@@ -38,6 +38,12 @@
   background: #670000;
 }
 
+.nothing {
+  display: none;
+  background: #670000;
+  border-color: #670000;
+}
+
 /* line 49, C:/Users/HP/Desktop/jun-2020/283.Personal/assets/scss/_color.scss */
 .white-bg {
   background: #ffffff;
