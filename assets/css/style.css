@@ -3739,7 +3739,7 @@ hr {
   /* line 19, C:/Users/HP/Desktop/jun-2020/283.Personal/assets/scss/_about.scss */
   .about-area::before {
     height: 15%;
-    right: -50px;
+    right: 0px;
   }
 }
 
