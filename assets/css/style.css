@@ -654,6 +654,7 @@ hr {
   border-radius: 30px;
   text-transform: capitalize;
   padding: 13px 48px;
+  user-select: none;
   -moz-user-select: none;
   cursor: pointer;
   display: inline-block;
@@ -2419,6 +2420,7 @@ hr {
   -moz-animation-duration: 2s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
   -ms-animation-name: float-bob;
   -ms-animation-duration: 2s;
   -ms-animation-iteration-count: infinite;
@@ -2444,6 +2446,18 @@ hr {
   }
 }
 
+@keyframes float-bob {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
 /* heartbeat */
 /* line 573, C:/Users/HP/Desktop/jun-2020/283.Personal/assets/scss/_common.scss */
 .heartbeat {
@@ -2453,6 +2467,12 @@ hr {
 @-webkit-keyframes heartbeat {
   to {
     -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+
+@keyframes heartbeat {
+  to {
     transform: scale(1.03);
   }
 }
@@ -4715,6 +4735,7 @@ hr {
 .blog_area a:hover, .blog_area a :hover {
   background: -webkit-linear-gradient(131deg, #670000 0%, #670000 99%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   transition: .4s;
@@ -6507,6 +6528,7 @@ hr {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+  appearance: none;
   display: block;
   outline: none;
   padding: 0;
